@@ -13,7 +13,8 @@ def home_page():
 
 @app.route('/<name>')
 def profile(name):
-	return render_template('index.html', name=name)
+	currName = str(name) + " You are awesome "
+	return render_template('index.html', name=currName)
 
 
 @app.route('/add_numbers', methods=['GET','POST'])
