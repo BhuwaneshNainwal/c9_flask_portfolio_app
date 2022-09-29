@@ -28,7 +28,7 @@ def add_numbers_post():
   	      total = 0
   	      try:
   	      	for str_num in request.form['text'].split():
-  	      		total += int(str_num)
+  	      		total *= int(str_num)
   	      	return render_template('add_numbers.html', result=str(total))
   	      except ValueError:
   	      	return "Easy now! Let's keep it simple! 2 numbers with a space between them please"
@@ -48,9 +48,7 @@ def shopping_list_post():
           try:
             for item in request.form['text'].split():
               
-              shop_list.append(item)
-
-              
+              shop_list.append(item)             
               
             return render_template('shopping_list.html', result="\n".join([str(item) for item in shop_list]))
           except ValueError:
