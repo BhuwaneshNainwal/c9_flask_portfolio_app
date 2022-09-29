@@ -34,5 +34,5 @@ dj-database-url==0.4.1
 psycopg2>=2.6.2
 whitenoise==2.0.6
 
-python:3.10.2-slim.
+python:3.10.2-slim
 
