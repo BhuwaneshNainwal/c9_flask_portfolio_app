@@ -4,6 +4,8 @@ import pytz # timezone
 import requests
 import os
 
+from collections.abc import Mapping
+
 
 
 app = Flask(__name__)
